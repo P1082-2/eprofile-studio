@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eProfile Studio — Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-banner">
+    <div class="banner-fade">
+      <div class="brand-wrap">
+        <img src="Images/Icon.png" alt="Logo" class="brand-icon" />
+        <div class="brand-text">
+          <h1>eProfile Studio</h1>
+          <p>Simple Digital Profile Templates</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="cards-grid">
+      <article class="card" data-base-price="50" data-code="as1">
+        <div class="preview-box" data-src="../Templates/temp1/index.html" data-title="Template 1">
+          <iframe src="../Templates/temp1/index.html" title="Template 1 Preview" tabindex="-1"></iframe>
+          <span class="preview-pill">Tap to preview</span>
+        </div>
+
+        <div class="card-info">
+          <div class="title-price">
+            <h2>Template 1</h2>
+            <span class="price">₱50</span>
+          </div>
+          <p class="desc">Centered profile &amp; link showcase.</p>
+
+          <div class="addons-box">
+            <label class="addon-option">
+              <input type="checkbox" class="addon-check" data-addon="Custom" data-price="5" />
+              <div class="addon-text">
+                <div class="addon-top">
+                  <strong>Custom Design</strong>
+                  <span class="addon-price">+₱5</span>
+                </div>
+                <span class="addon-sub">Custom background &amp; colors</span>
+              </div>
+            </label>
+
+            <label class="addon-option">
+              <input type="checkbox" class="addon-check" data-addon="Custom-source" data-price="10" />
+              <div class="addon-text">
+                <div class="addon-top">
+                  <strong>Source Code</strong>
+                  <span class="addon-price">+₱10</span>
+                </div>
+                <span class="addon-sub">Full project files included</span>
+              </div>
+            </label>
+          </div>
+
+          <button type="button" class="select-btn">Select • ₱50</button>
+        </div>
+      </article>
+
+      <article class="card" data-base-price="55" data-code="as2">
+        <div class="preview-box" data-src="../Templates/temp2/index.html" data-title="Template 2">
+          <iframe src="../Templates/temp2/index.html" title="Template 2 Preview" tabindex="-1"></iframe>
+          <span class="preview-pill">Tap to preview</span>
+        </div>
+
+        <div class="card-info">
+          <div class="title-price">
+            <h2>Template 2</h2>
+            <span class="price">₱55</span>
+          </div>
+          <p class="desc">Top menu bar &amp; 2-column works.</p>
+
+          <div class="addons-box">
+            <label class="addon-option">
+              <input type="checkbox" class="addon-check" data-addon="Custom" data-price="5" />
+              <div class="addon-text">
+                <div class="addon-top">
+                  <strong>Custom Design</strong>
+                  <span class="addon-price">+₱5</span>
+                </div>
+                <span class="addon-sub">Custom background &amp; colors</span>
+              </div>
+            </label>
+
+            <label class="addon-option">
+              <input type="checkbox" class="addon-check" data-addon="Custom-source" data-price="10" />
+              <div class="addon-text">
+                <div class="addon-top">
+                  <strong>Source Code</strong>
+                  <span class="addon-price">+₱10</span>
+                </div>
+                <span class="addon-sub">Full project files included</span>
+              </div>
+            </label>
+          </div>
+
+          <button type="button" class="select-btn">Select • ₱55</button>
+        </div>
+      </article>
+
+      <article class="card" data-base-price="60" data-code="as3">
+        <div class="preview-box" data-src="../Templates/temp3/index.html" data-title="Template 3">
+          <iframe src="../Templates/temp3/index.html" title="Template 3 Preview" tabindex="-1"></iframe>
+          <span class="preview-pill">Tap to preview</span>
+        </div>
+
+        <div class="card-info">
+          <div class="title-price">
+            <h2>Template 3</h2>
+            <span class="price">₱60</span>
+          </div>
+          <p class="desc">Side profile header &amp; bottom bar.</p>
+
+          <div class="addons-box">
+            <label class="addon-option">
+              <input type="checkbox" class="addon-check" data-addon="Custom" data-price="5" />
+              <div class="addon-text">
+                <div class="addon-top">
+                  <strong>Custom Design</strong>
+                  <span class="addon-price">+₱5</span>
+                </div>
+                <span class="addon-sub">Custom background &amp; colors</span>
+              </div>
+            </label>
+
+            <label class="addon-option">
+              <input type="checkbox" class="addon-check" data-addon="Custom-source" data-price="10" />
+              <div class="addon-text">
+                <div class="addon-top">
+                  <strong>Source Code</strong>
+                  <span class="addon-price">+₱10</span>
+                </div>
+                <span class="addon-sub">Full project files included</span>
+              </div>
+            </label>
+          </div>
+
+          <button type="button" class="select-btn">Select • ₱60</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="viewer-modal hidden" id="viewerModal">
+    <div class="viewer-box">
+      <div class="viewer-header">
+        <span id="viewerTitle">Preview</span>
+        <button type="button" class="close-viewer" id="closeViewer">&times;</button>
+      </div>
+      <iframe id="viewerFrame" src="" title="Live Template Preview"></iframe>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toastMsg">
+    Copied to clipboard! Paste it in our chat to order.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
